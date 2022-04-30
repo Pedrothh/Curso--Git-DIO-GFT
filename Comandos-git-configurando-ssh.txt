@@ -1,0 +1,7 @@
+ssh-keygen -t ed25519 -C pedro.th.dev@gmail.com		-> cria a chave
+
+colar a chave no github.com
+
+eval $(ssh-agent -s)					-> inicia o shh-agent
+
+ssh-add id_ed25519					-> entrega a chave privada ao ssh-agent
