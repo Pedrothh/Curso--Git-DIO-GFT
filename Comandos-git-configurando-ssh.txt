@@ -1,7 +1,11 @@
-ssh-keygen -t ed25519 -C pedro.th.dev@gmail.com		-> cria a chave
+ssh-keygen -t ed25519 -C pedro.th.dev@gmail.com		-> cria a ssh-keygen para o email: "pedro.th.dev@gmail.com" 
 
-colar a chave no github.com
+# OBS: Colar a chave no github.com (settings)
 
 eval $(ssh-agent -s)					-> inicia o shh-agent
-
 ssh-add id_ed25519					-> entrega a chave privada ao ssh-agent
+git clone link https ou ssh				-> clona um repositório
+git config --list					-> olha as configurações do seu git
+git config --global --unset user.email 			-> reseta o global user.email
+git config --global user.email "pedro.th.dev@gmail.com"	-> seta o global user.email
+git config --global user.name "Pedro Thomé"		-> seta o global user.name
